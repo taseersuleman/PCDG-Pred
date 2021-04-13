@@ -729,7 +729,7 @@ def app():
             load_model = pickle.load(open('Cancer-model_RF_ind.pkl', 'rb'))
             pred = load_model.predict(X)
             output_proba = load_model.predict_proba(X)[:, 1]
-            print(output_proba)
+            st.write(output_proba)
             if output_proba > 0.4:
                 st.info("Output = Cancer Driver Gene")
             else:
