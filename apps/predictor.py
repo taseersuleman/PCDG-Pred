@@ -979,7 +979,6 @@ def app():
             load_model = pickle.load(open('Cancer-model_RF_ind.pkl', 'rb'))
             pred = load_model.predict(X)
             output_proba = load_model.predict_proba(X)[:, 1]
-            st.write(output_proba)
             leno = len(output_proba)
             for i in range(leno):
                 if output_proba[i] > 0.3:
