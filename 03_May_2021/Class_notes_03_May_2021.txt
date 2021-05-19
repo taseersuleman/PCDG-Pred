@@ -1,0 +1,43 @@
+Flow Control Instructions
+
+On the basis of flags, we have implemented Flow contol instructions
+
+In assembly these type of instructions are implemented through Jumps.
+
+There are two types of Jumps.
+
+1. Conditional Jump
+	A. Single Flag Jump (if zf = 1)
+JC = Jump if carry (CF=1), JZ = jump if  zero (ZF =1), JS jump if signed (SF =1)
+JNC = jump if not carry (CF = 0)
+JNZ = Jump if not zero (ZF = 0)
+
+
+
+
+	B. Signed Jump (multiple flags )
+	C. Unsigned Jump (multiple flags)
+2. Unconditional Jump
+
+JMP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
